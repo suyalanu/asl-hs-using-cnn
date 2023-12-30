@@ -1,0 +1,49 @@
+#root {
+  color: black;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 0;
+  margin: 0 auto;
+  padding: 2rem;
+
+  box-sizing: border-box;
+  width: 100%; /* Make the container take full width */
+}
+
+.footer {
+  text-color: black;
+}
+
+nav {
+  background-color: #9830dd;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 5;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  border-bottom: 2px solid white;
+}
