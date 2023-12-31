@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-=======
 // Navbar.js
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Css/Header.css";
->>>>>>> akshar
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("home");
