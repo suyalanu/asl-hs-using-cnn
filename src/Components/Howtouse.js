@@ -6,6 +6,7 @@ function Howtouse() {
   return (
     <>
       <Header />
+      <div className="Container"></div>
       <Footer />
     </>
   );

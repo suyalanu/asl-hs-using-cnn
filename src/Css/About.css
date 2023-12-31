@@ -1,0 +1,19 @@
+/* .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+} */
+.about {
+  width: 50%;
+  margin-right: 30px;
+  text-wrap: pretty;
+  font-size: 25px;
+  line-height: 1.6;
+  text-align: left;
+}
+.image-container {
+  width: 30%; /* Adjust the width of the image container */
+  display: flex;
+  justify-content: right;
+}

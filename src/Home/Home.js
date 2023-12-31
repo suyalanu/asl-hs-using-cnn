@@ -4,6 +4,9 @@ import Footer from "./Footer";
 import handsign from "../Img/handsign.jpg";
 import handsign1 from "../Img/handsign1.png";
 import handsign2 from "../Img/handsign2.png";
+import handsign3 from "../Img/handsign3.jpeg";
+import handsign4 from "../Img/handsign4.jpeg";
+import handsign5 from "../Img/handsign5.jpeg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -37,8 +40,17 @@ const Home = () => {
           <div style={slideStyles}>
             <img src={handsign1} alt="handsign1" />
           </div>
-          <div style={slideStyles}>
+          {/* <div style={slideStyles}>
             <img src={handsign2} alt="handsign2" />
+          </div> */}
+          <div style={slideStyles}>
+            <img src={handsign3} alt="handsign2" />
+          </div>
+          <div style={slideStyles}>
+            <img src={handsign4} alt="handsign2" />
+          </div>
+          <div style={slideStyles}>
+            <img src={handsign5} alt="handsign2" />
           </div>
         </Slider>
       </div>
