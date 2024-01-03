@@ -51,7 +51,7 @@ function Team() {
             </div>
             <div className="am-description">
               <div className="desc">
-                <p className="ambassadorname">Deepa Khana</p>
+                <p className="ambassadorname">Deepa Khanal</p>
                 <p>BSC CSIT</p>
                 <p>Ambition College </p>
                 <p className="universityname">Tribhuvan University</p>
