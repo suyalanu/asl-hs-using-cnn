@@ -1,10 +1,9 @@
-import logo from "./logo.svg";
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Login /Login.js";
 import Home from "./Home/Home";
 import About from "./Components/About";
 import Howtouse from "./Components/Howtouse";
+import Team from "./Components/Team";
 
 function App() {
   return (
@@ -15,6 +14,7 @@ function App() {
           <Route path="/Home" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Howtouse" element={<Howtouse />} />
+          <Route path="/team" element={<Team />} />
         </Routes>
       </BrowserRouter>
     </>

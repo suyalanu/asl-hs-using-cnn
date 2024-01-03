@@ -10,49 +10,52 @@ import handsign5 from "../Img/handsign5.jpeg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import ProjectDes from "../Components/ProjectDes";
 
 const Home = () => {
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 10000,
     pauseOnHover: true,
   };
-  const slideStyles = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    height: "300px", // Set a fixed height for the slider container
-  };
 
   return (
     <>
       <Header />
       <div className="container">
-        <Slider {...sliderSettings}>
-          <div style={slideStyles}>
-            <img src={handsign} alt="handsign" />
-          </div>
-          <div style={slideStyles}>
-            <img src={handsign1} alt="handsign1" />
-          </div>
-          {/* <div style={slideStyles}>
-            <img src={handsign2} alt="handsign2" />
-          </div> */}
-          <div style={slideStyles}>
-            <img src={handsign3} alt="handsign2" />
-          </div>
-          <div style={slideStyles}>
-            <img src={handsign4} alt="handsign2" />
-          </div>
-          {/* <div style={slideStyles}>
-            <img src={handsign5} alt="handsign2" />
-          </div> */}
-        </Slider>
+        <div className="row about-slider">
+          {/* <h2 className="heading">Team Introduction</h2> */}
+          <Slider {...sliderSettings}>
+            <div className="about-slider-item">
+              <div className="slides">
+                <img src={handsign} alt="handsign" />
+              </div>
+            </div>
+            <div className="about-slider-item">
+              <div className="slides">
+                <img src={handsign1} alt="handsign1" />
+              </div>
+            </div>
+            <div className="about-slider-item">
+              <div className="slides">
+                <img src={handsign3} alt="handsign2" />
+              </div>
+            </div>
+            <div className="about-slider-item">
+              <div className="slides">
+                <img src={handsign4} alt="handsign2" />
+              </div>
+            </div>
+          </Slider>
+        </div>
+      </div>
+      <div className="desc">
+        <ProjectDes />
       </div>
       <Footer />
     </>

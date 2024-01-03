@@ -47,3 +47,35 @@ a {
 .active {
   border-bottom: 2px solid white;
 }
+.slides {
+  display: "flex";
+  align-items: "center";
+  justify-content: "center";
+  width: "20px";
+}
+
+.about-slider {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.about-slider-item {
+  max-width: 1024px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.about-slider-item img {
+  width: 100px;
+  margin: auto;
+}
+
+.about-slider-item img .about-slider-item h3 {
+  font-size: 1.5rem !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: var(--primary-color) !important;
+}

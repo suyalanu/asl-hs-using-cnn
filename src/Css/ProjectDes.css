@@ -1,0 +1,66 @@
+.background {
+  background: linear-gradient(
+    to right,
+    rgb(232, 154, 167) 50%,
+    rgb(223, 113, 170) 50%
+  );
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.background .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px;
+  padding: 30px;
+  width: 50%;
+  height: auto;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+.background img {
+  position: absolute;
+  height: 50px;
+}
+
+.background .left-img {
+  left: 15%;
+}
+
+.background .right-img {
+  right: 15%;
+}
+
+.description p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .background .content {
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .background img {
+    height: 30px;
+    z-index: 1;
+    opacity: 0.5;
+  }
+
+  .background .left-img {
+    top: 20px;
+    left: 20px;
+  }
+
+  .background .right-img {
+    bottom: 20px;
+    right: 20px;
+  }
+}

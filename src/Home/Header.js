@@ -1,64 +1,97 @@
-// Navbar.js
-
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import "../Css/Header.css";
 
-const Navbar = () => {
-  const [activeLink, setActiveLink] = useState("home");
-  const navigate = useNavigate();
-
-  const handleSetActiveLink = (link) => {
-    setActiveLink(link);
+const Header = () => {
+  const menuOpen = () => {
+    var nav = document.getElementById("navigation");
+    nav.classList.add("active");
   };
 
-  const handleButtonClick = () => {
-    navigate("/StartDetectionPage");
+  const menuClose = () => {
+    var nav = document.getElementById("navigation");
+    nav.classList.remove("active");
   };
-  const buttonStyle = {
-    backgroundColor: "white", // Set the background color
-    color: "#9830dd", // Set the text color
-    padding: "10px 15px", // Set padding
-    border: "none", // Remove border
-    borderRadius: "5px", // Add border radius
-    cursor: "pointer", // Add pointer cursor on hover
-    display: "flex",
-    flexdirection: "end",
+
+  const scrollToHome = () => {
+    const backgroundSection = document.getElementById("background");
+    if (backgroundSection) {
+      backgroundSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
+
+  const scrollToAbout = () => {
+    const CPSection = document.getElementById("About");
+    if (CPSection) {
+      CPSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollTohowtouse = () => {
+    const ProjectSection = document.getElementById("project");
+    if (ProjectSection) {
+      ProjectSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToTeam = () => {
+    const TeamSection = document.getElementById("team");
+    if (TeamSection) {
+      TeamSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const activate = (e) => {
+    // console.log(e.target.parentElement);
+    var navLists = document.querySelectorAll(".nav-list");
+    navLists.forEach((list) => {
+      if (list.classList.contains("active")) {
+        list.classList.remove("active");
+      }
+    });
+    e.target.parentElement.classList.add("active");
+  };
+
   return (
-    <div className="intro">
-      <nav>
-        {" "}
-        <h1 className="introduction">ASL HandSign Detection </h1>
+    <header>
+      <nav id="navigation">
+        {/* <div className="intro">
+          <h2>HEllo</h2>
+        </div> */}
         <ul>
-          <li
-            className={activeLink === "home" ? "active" : ""}
-            onClick={() => handleSetActiveLink("home")}
-          >
-            <Link to="/home">Home</Link>
+          <li className="nav-list active" onClick={activate}>
+            <a href="/home" onClick={scrollToHome}>
+              Home
+            </a>
           </li>
-          <li
-            className={activeLink === "about" ? "active" : ""}
-            onClick={() => handleSetActiveLink("about")}
-          >
-            <Link to="/about">About</Link>
+
+          <li className="nav-list" onClick={activate}>
+            <a href="/about" onClick={scrollToAbout}>
+              About
+            </a>
           </li>
-          <li
-            className={activeLink === "howtouse" ? "active" : ""}
-            onClick={() => handleSetActiveLink("howtouse")}
-          >
-            <Link to="/howtouse">How to use</Link>
+          <li className="nav-list" onClick={activate}>
+            <a href="/howtouse" onClick={scrollTohowtouse}>
+              How To Use
+            </a>
           </li>
-          <li>
-            {/* Button to open a new page */}
-            <button style={buttonStyle} onClick={handleButtonClick}>
-              New Page
-            </button>
+          <li className="nav-list" onClick={activate}>
+            <a href="/team" onClick={scrollToTeam}>
+              Team
+            </a>
           </li>
+
+          <i
+            id="menu-close"
+            className="fa-solid fa-xmark"
+            onClick={menuClose}
+          ></i>
         </ul>
       </nav>
-    </div>
+      <div className="menu-icon">
+        <i id="menu-toggle" className="fa-solid fa-bars" onClick={menuOpen}></i>
+      </div>
+    </header>
   );
 };
 
-export default Navbar;
+export default Header;
