@@ -11,46 +11,52 @@ function Team() {
     <>
       <Header />
       <div className="container">
-        <div id="team" className="team-wrap">
-          <div className="container">
-            <h2 className="heading text-center mb-5">Meet Our Team</h2>
-            <div className="row">
-              <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
-                <div className="team-member">
-                  <div
-                    className="round-image"
-                    style={{ backgroundImage: `url(${deepa})` }}
-                  ></div>
-                  <p className="membername">Akshar Lammichhane</p>
-                  <p>BSc. CSIT</p>
-                  <p>Ambition College</p>
-                  <p className="universityname">Tribhuvan University</p>
-                </div>
+        <h2 className="heading ">Meet Our Project Team Members</h2>
+        <div className="ambassador1">
+          <div className="ambassador-div">
+            <div className="am-img">
+              <img className="imgam" src={deepa} alt="" />
+            </div>
+            <div className="am-description">
+              <div className="desc">
+                <p className="ambassadorname">Akshar Lamichhane</p>
+                <p>BSC CSIT</p>
+                <p>Ambition College </p>
+                <p className="universityname">Tribhuvan University</p>
               </div>
-              <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
-                <div className="team-member">
-                  <div
-                    className="round-image"
-                    style={{ backgroundImage: `url(${anushka})` }}
-                  ></div>
-                  <p className="membername">Anushka Suyal</p>
-                  <p>BSc. CSIT</p>
-                  <p>Ambition College</p>
-                  <p className="universityname">Tribhuvan University</p>
-                </div>
-              </div>{" "}
-              <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
-                <div className="team-member">
-                  <div
-                    className="round-image"
-                    style={{ backgroundImage: `url(${deepa})` }}
-                  ></div>
-                  <p className="membername">Deepa Khanal</p>
-                  <p>BSc. CSIT</p>
-                  <p>Ambition College</p>
-                  <p className="universityname">Tribhuvan University</p>
-                </div>
+              <p>Anushka Suyal</p>
+            </div>
+          </div>
+        </div>
+        <div className="ambassador2">
+          <div className="ambassador-div">
+            <div className="am-img">
+              <img className="imgam" src={anushka} alt="" />
+            </div>
+            <div className="am-description">
+              <div className="desc">
+                <p className="ambassadorname">Anushka Suyal</p>
+                <p>BSC CSIT</p>
+                <p>Ambition College </p>
+                <p className="universityname">Tribhuvan University</p>
               </div>
+              <p>Anushka Suyal</p>
+            </div>
+          </div>
+        </div>
+        <div className="ambassador3">
+          <div className="ambassador-div">
+            <div className="am-img">
+              <img className="imgam" src={deepa} alt="" />
+            </div>
+            <div className="am-description">
+              <div className="desc">
+                <p className="ambassadorname">Deepa Khana</p>
+                <p>BSC CSIT</p>
+                <p>Ambition College </p>
+                <p className="universityname">Tribhuvan University</p>
+              </div>
+              <p>Anushka Suyal</p>
             </div>
           </div>
         </div>

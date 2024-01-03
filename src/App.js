@@ -4,6 +4,7 @@ import Home from "./Home/Home";
 import About from "./Components/About";
 import Howtouse from "./Components/Howtouse";
 import Team from "./Components/Team";
+import StartDetectionPage from "./Components/StartDetectionPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Howtouse" element={<Howtouse />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/StartDetectionPage" element={<StartDetectionPage />} />
         </Routes>
       </BrowserRouter>
     </>

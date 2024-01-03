@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Css/Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const menuOpen = () => {
@@ -78,6 +79,10 @@ const Header = () => {
             <a href="/team" onClick={scrollToTeam}>
               Team
             </a>
+          </li>
+
+          <li className="nav-list" onClick={activate}>
+            <Link to="/StartDetectionPage">Start Detection</Link>
           </li>
 
           <i

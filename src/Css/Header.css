@@ -2,7 +2,7 @@
 
 nav {
   background-color: #9830dd;
-  padding: 10px;
+  padding: 20px;
 }
 .intro {
   display: flex;
@@ -13,7 +13,7 @@ ul {
   margin: 5;
   padding: 0;
   display: flex;
-  justify-content: end;
+  justify-content: left;
 }
 
 li {
@@ -35,6 +35,13 @@ a:hover {
 .active {
   background-color: #9830dd;
 }
+.start-detect {
+  background-color: hsl(276, 72%, 53%);
+  color: white;
+  display: flex;
+  justify-content: left;
+}
+
 /* .button {
   background-color: "#007bff";
   color: "#fff";

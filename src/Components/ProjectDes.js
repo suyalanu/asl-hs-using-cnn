@@ -8,7 +8,7 @@ function ProjectDes() {
       <img className="bg-img right-img" src={shape} alt="" />
 
       <div className="content">
-        <h2 className="title">Background</h2>
+        <h2 className="title"></h2>
         <div className="description">
           <p>
             Sign language is manual communication commonly used by people who

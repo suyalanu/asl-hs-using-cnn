@@ -1,67 +1,11 @@
 .about {
-  width: 50%;
-  margin-right: 30px;
+  width: 100%;
+  padding-left: 20px;
   text-wrap: pretty;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.6;
-  text-align: left;
-}
-/* Meet our team */
-.container {
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-right: auto;
-  margin-left: auto;
-}
-.centered-heading {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.team-wrap {
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 100px;
-}
-
-.team-members {
-  display: flex;
-  justify-content: center;
-}
-
-.team-member {
   text-align: center;
-  margin: 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-
-.round-image {
-  width: 200px;
-  height: 200px;
-  background-color: #ccc;
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.team-member p {
-  font-size: 14px;
-  margin: 5px 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.membername {
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.universityname {
-  font-weight: bold;
-  font-size: 16px;
+.col-6 {
+  padding: 10px;
 }

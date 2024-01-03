@@ -11,50 +11,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import ProjectDes from "../Components/ProjectDes";
+import Banner from "../Components/Banner";
 
 const Home = () => {
-  const sliderSettings = {
-    dots: false,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 10000,
-    pauseOnHover: true,
-  };
-
   return (
     <>
       <Header />
-      <div className="container">
-        <div className="row about-slider">
-          {/* <h2 className="heading">Team Introduction</h2> */}
-          <Slider {...sliderSettings}>
-            <div className="about-slider-item">
-              <div className="slides">
-                <img src={handsign} alt="handsign" />
-              </div>
-            </div>
-            <div className="about-slider-item">
-              <div className="slides">
-                <img src={handsign1} alt="handsign1" />
-              </div>
-            </div>
-            <div className="about-slider-item">
-              <div className="slides">
-                <img src={handsign3} alt="handsign2" />
-              </div>
-            </div>
-            <div className="about-slider-item">
-              <div className="slides">
-                <img src={handsign4} alt="handsign2" />
-              </div>
-            </div>
-          </Slider>
-        </div>
-      </div>
+      <div className="container"></div>
       <div className="desc">
+        <Banner />
         <ProjectDes />
       </div>
       <Footer />

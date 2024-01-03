@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,800&family=Noto+Sans+Nabataean&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@900&display=swap");
+
+.banner-wrap {
+  /* background-color: blueviolet; */
+  background: linear-gradient(#00000088, #00000088),
+    url("../Img/handsign6.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+}
+
+.banner h1 {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  /* font-style: italic; */
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  -webkit-background-clip: text;
+}
+
+@media screen and (max-width: 768px) {
+  .banner h1 {
+    font-size: 60px;
+  }
+
+  .banner-wrap {
+    background-position: 900px;
+  }
+}
