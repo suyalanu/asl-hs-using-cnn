@@ -49,9 +49,9 @@ const Home = () => {
           <div style={slideStyles}>
             <img src={handsign4} alt="handsign2" />
           </div>
-          <div style={slideStyles}>
+          {/* <div style={slideStyles}>
             <img src={handsign5} alt="handsign2" />
-          </div>
+          </div> */}
         </Slider>
       </div>
       <Footer />

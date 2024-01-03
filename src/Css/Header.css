@@ -4,12 +4,16 @@ nav {
   background-color: #9830dd;
   padding: 10px;
 }
-
+.introduction {
+  color: white;
+  display: flex;
+}
 ul {
   list-style-type: none;
   margin: 5;
   padding: 0;
   display: flex;
+  justify-content: end;
 }
 
 li {
@@ -31,3 +35,11 @@ a:hover {
 .active {
   background-color: #9830dd;
 }
+/* .button {
+  background-color: "#007bff";
+  color: "#fff";
+  padding: "10px 15px";
+  border: "none";
+  border-radius: "5px";
+  cursor: "pointer";
+} */
